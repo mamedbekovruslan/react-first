@@ -1,7 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  // Весь код кроме помеченной строки - декларатиный
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        {/* Вот это императиный стиль. */}
+        <span>{new Date().getFullYear()}</span>
       </header>
     </div>
   );
